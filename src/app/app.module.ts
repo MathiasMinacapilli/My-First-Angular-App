@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//The router to use whit angular.
 import { RouterModule } from '@angular/router';
+//Performs HTTP requests.
 import { HttpClientModule } from '@angular/common/http';
 //FormBuilder service provides convenient methods for generating controls.
-//The FormBuilder service is provided by the ReactiveFormsModule, 
+//The FormBuilder service is provided by the ReactiveFormsModule.
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -30,7 +32,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      //Here you define your routes
+      //----------------Here you define your routes----------------
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
